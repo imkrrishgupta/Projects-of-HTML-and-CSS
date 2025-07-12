@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      border: 8px solid aliceblue;
+      border-radius: 25px;
+      background-color: #1a1a1a;
+      color: #fff;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      border: 5px solid #ffff00;
+      border-radius: 20px;
+    }
+
+    .w-100 {
+      width: 100ch;
+      height: 50vh;
+      padding: 20px;
+    }
+
+    .grid-container {
+      padding: 20px;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      border: 5px solid #0ac01f;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.pexels.com/photos/3532557/pexels-photo-3532557.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+            class="d-block w-100 active" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/3532556/pexels-photo-3532556.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+            class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+            class="d-block w-100" alt="">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+
+      </button>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://i.ytimg.com/vi/6dqAwh2MCg0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDHHmvFTaL70oJb0P6aKM0iQ1Uvbw"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ultimate AI ML Roadmap for beginners</h5>
+        <p class="card-text">By- Chai aur Code</p>
+        <a href="https://www.youtube.com/watch?v=6dqAwh2MCg0" class="btn btn-primary">Play Video</a>
+      </div>
+    </div>
+  
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://i.ytimg.com/vi/NkwFxeHARqc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB61LAsm8HCXtZTaAdqvap12x8ilA"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Web Development Roadmap 2025 with GenAI</h5>
+        <p class="card-text">By- Chai aur Code</p>
+        <a href="https://www.youtube.com/watch?v=NkwFxeHARqc" class="btn btn-primary">Play Video</a>
+      </div>
+    </div>
+  
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://i.ytimg.com/vi/x7ULDYs4X84/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD8IM41wdrSBHn2Uvl71IesR3rusQ"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Complete Numpy course in hindi</h5>
+        <p class="card-text">By- Chai aur Code</p>
+        <a href="https://www.youtube.com/watch?v=x7ULDYs4X84" class="btn btn-primary">Play Video</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="border: 5px solid slategray; display: flex; justify-content: center;">
+    <footer>&copy; Krrish Kumar</footer>
+  </div>
+
+</body>
+</html>

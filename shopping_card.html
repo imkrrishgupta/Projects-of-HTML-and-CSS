@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Card</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #7a7b7c;
+            border-radius: 20px;
+            width: auto;
+            padding: 50px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px;
+        }
+
+        .button {
+            background-color: #643e3e;
+            border-radius: 5px;
+            box-shadow: 1px 2px;       /* offset(x), offset(y) */
+            padding: 5px;
+            margin-left: 40px;
+        }
+
+        .button:hover {
+            background-color: #3e2626;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="/Users/krrishkumar/WEBDEV/CSS/images/shoes.jpg" alt="Item image">
+        <div class="box">
+            <button type="submit" class="button"><a href="#">BUY NOW</a></button>
+            <button type="submit" class="button"><a href="#">ADD TO WISHLIST</a></button>
+        </div>
+    </div>
+</body>
+</html>
